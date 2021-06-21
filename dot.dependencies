@@ -1,0 +1,18 @@
+[
+  {
+    "repository": "android_device_xiaomi_sdm660-common-jason",
+    "target_path": "device/xiaomi/sdm660-common"
+  },
+ {
+   "repository": "android_kernel_xiaomi_sdm660",
+   "target_path": "kernel/xiaomi/sdm660"
+ },
+ {
+   "repository": "proprietary_vendor_xiaomi_jason",
+   "target_path": "vendor/xiaomi"
+ },
+ {
+   "repository": "device_xiaomi_jason",
+   "target_path": "device/xiaomi/jason"
+ }
+]
