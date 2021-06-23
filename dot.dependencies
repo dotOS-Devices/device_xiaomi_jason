@@ -15,8 +15,9 @@
    "repository": "device_xiaomi_jason",
    "target_path": "device/xiaomi/jason"
  },
- {
+ { "remote": "dotos-devices-gitlab",
    "repository": "vendor_miuicamera-jason",
-   "target_path": "vendor/miuicamera"
+   "target_path": "vendor/miuicamera",
+   "branch": "dot11"
  }
 ]
