@@ -36,11 +36,11 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         </interface>
     </hal>
     <hal format="hidl">
-        <name>vendor.qti.hardware.cryptfshw</name>
+        <name>android.hardware.ir</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
-            <name>ICryptfsHw</name>
+            <name>IConsumerIr</name>
             <instance>default</instance>
         </interface>
     </hal>
@@ -56,20 +56,21 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     </hal>
     <!-- nfc -->
     <hal format="hidl">
-        <name>android.hardware.nfc</name>
+        <name>vendor.qti.hardware.cryptfshw</name>
         <transport>hwbinder</transport>
-        <version>1.2</version>
+        <version>1.0</version>
         <interface>
-            <name>INfc</name>
+            <name>ICryptfsHw</name>
             <instance>default</instance>
         </interface>
     </hal>
+    <!-- nfc -->
     <hal format="hidl">
-        <name>vendor.nxp.hardware.nfc</name>
+        <name>android.hardware.nfc</name>
         <transport>hwbinder</transport>
         <version>2.0</version>
         <interface>
-            <name>INqNfc</name>
+            <name>INfc</name>
             <instance>default</instance>
         </interface>
     </hal>
