@@ -28,6 +28,7 @@ DEVICE_PATH := device/xiaomi/jason
 
 # Kernel
 TARGET_KERNEL_CONFIG := jason_defconfig
+TARGET_KERNEL_SOURCE := kernel/xiaomi/jason
 TARGET_KERNEL_VERSION := 4.4
 
 # Camera
@@ -40,11 +41,14 @@ TARGET_HW_DISK_ENCRYPTION := true
 TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS := 0x00002000U
 TARGET_SCREEN_DENSITY := 420
 
+# DT2W
+TARGET_TAP_TO_WAKE_NODE := "/sys/touchpanel/double_tap"
+
+# Keylayout
+TARGET_USES_HARDWARE_KEYS := true
+
 # Mainfest
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/manifest.xml
-
-# NFC
-TARGET_USES_NQ_NFC := true
 
 # Partitions
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 5368709120
@@ -63,7 +67,7 @@ BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 # Security patch level
-VENDOR_SECURITY_PATCH := 2019-03-01
+VENDOR_SECURITY_PATCH := 2020-11-23
 
 # Inherit the proprietary files
 include vendor/xiaomi/jason/BoardConfigVendor.mk

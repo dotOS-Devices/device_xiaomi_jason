@@ -429,18 +429,5 @@ vendor/firmware/a530_gpmu.fw2
 vendor/firmware/a530_pfp.fw
 vendor/firmware/a530_pm4.fw
 
-# Thermal
-vendor/bin/thermal-engine
--vendor/lib/libthermalclient.so
--vendor/lib64/libthermalclient.so
-vendor/lib64/libthermalioctl.so
-
-# Thermal configuration
-vendor/etc/thermal-engine-sdm660-high.conf
-vendor/etc/thermal-engine-sdm660-map.conf
-vendor/etc/thermal-engine-sdm660-nolimits.conf
-vendor/etc/thermal-engine-sdm660.conf
-vendor/etc/thermal-engine.conf
-
 # Wifi
 vendor/bin/cnss-daemon
